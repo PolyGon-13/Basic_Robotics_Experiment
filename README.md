@@ -1,5 +1,7 @@
 # Basic Robotics Experiment
 
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white)](https://youtu.be/BRwmJgBylNg?si=WneAuqPIdJIvUGtT)
+
 WEGO Robotics의 Jetson Nano 기반 LIMO 모바일 로봇을 이용한 운전면허 기능시험 코스 보조 주행 로봇
 
 <img src="image/field_environment_1.png" alt="경기장 환경 1" width="80%">
