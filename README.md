@@ -1,6 +1,6 @@
 # Basic Robotics Experiment
 
-WEGO Robotics의 Jetson Nano 기반 LIMO 로봇으로 운전면허 기능시험 코스 보조 주행 로봇 구현
+WEGO Robotics의 Jetson Nano 기반 LIMO 모바일 로봇을 이용한 운전면허 기능시험 코스 보조 주행 로봇
 
 <img src="image/field_environment_1.png" alt="경기장 환경 1" width="80%">
 
