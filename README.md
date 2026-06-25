@@ -1,8 +1,6 @@
 # Basic Robotics Experiment
 
-한양대학교 ERICA 로봇공학과 1학년 2학기 `기초로봇공학실험` 프로젝트.
-
-WEGO Robotics의 Jetson Nano 기반 LIMO 로봇으로 운전면허 기능시험 코스 보조 주행 로봇 구현. 기준 환경은 Ubuntu 18.04, ROS1 Melodic.
+WEGO Robotics의 Jetson Nano 기반 LIMO 로봇으로 운전면허 기능시험 코스 보조 주행 로봇 구현
 
 <img src="image/field_environment_1.png" alt="경기장 환경 1" width="80%">
 
@@ -10,7 +8,7 @@ WEGO Robotics의 Jetson Nano 기반 LIMO 로봇으로 운전면허 기능시험 
 
 ## 프로젝트 목표
 
-카메라, LiDAR, IMU, ArUco Marker를 이용해 LIMO 로봇이 기능시험 코스를 자율 주행하도록 구성.
+카메라, LiDAR, IMU, ArUco Marker를 이용해 LIMO 로봇이 기능시험 코스를 자율 주행하도록 구성
 
 주요 기능:
 
