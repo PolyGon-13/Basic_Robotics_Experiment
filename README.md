@@ -29,45 +29,6 @@ WEGO Robotics의 Jetson Nano 기반 LIMO 로봇으로 운전면허 기능시험 
 | Language | Python |
 | Main sensors | RGB-D Camera, LiDAR, IMU |
 
-## 패키지 구조
-
-catkin workspace 기준 구조.
-
-```text
-limo_project/
-  src/
-    CMakeLists.txt
-    limo_legend/
-      package.xml
-      CMakeLists.txt
-      launch/
-        start.launch
-        marker.launch
-      scripts/
-        ar_marker.py
-        control.py
-        crosswalk_detect.py
-        lane_detect.py
-        lidar_stop.py
-      audio/
-        left.mp3
-        park.mp3
-        right.mp3
-        start.mp3
-        stop.mp3
-```
-
-## 실행 방법
-
-```bash
-cd ~/limo_project
-catkin_make
-source devel/setup.bash
-roslaunch limo_legend start.launch
-```
-
-`start.launch`는 LIMO bringup, 카메라 실행, 주행 관련 노드를 한 번에 실행하기 위한 launch 파일. 현재 카메라 launch 파일은 실험 로봇의 workspace 경로 기준 참조이므로, 다른 환경에서는 `start.launch`의 카메라 include 경로 확인 필요.
-
 ## 노드 구성
 
 | 파일 | 역할 |
@@ -147,16 +108,3 @@ roslaunch limo_legend start.launch
 접근: `pygame`으로 mp3 파일 재생, Marker 동작 상태에 따라 한 번만 재생되도록 플래그 적용.
 
 결과: 기능 동작은 가능했으나 주행 중 지연 발생. 실제 시연에서는 제외.
-
-## 문서
-
-프로젝트 보고서 위치:
-
-- `docs/중간보고서.pdf`
-- `docs/결과보고서.pdf`
-
-## 현재 한계
-
-- `start.launch`의 카메라 launch 경로가 특정 로봇 workspace에 의존
-- Marker 동작 일부가 실험으로 정한 시간 기반 모션 제어에 의존
-- 음성 안내 기능은 지연 문제로 실제 시연에서 제외
